@@ -29,7 +29,7 @@ def move(my_history, their_history, my_score, their_score):
     
     if my_score > 1:
         return 'b'
-    elif their_history [1] is 'bb':
+    elif their_history [2] is 'bb':
         return 'b'
     elif their_history [8] is 'cb':
         return 'c'
@@ -41,6 +41,9 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
     elif my_score > 12:
         return 'b'
+    elif my_score < 12:
+        return 'b'
+    
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
