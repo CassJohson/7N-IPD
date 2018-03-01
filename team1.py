@@ -29,15 +29,15 @@ def move(my_history, their_history, my_score, their_score):
     
     if my_score > 100:
         return 'b'
-    elif their_history [200] == 'bb':
+    elif their_history == 'bb':
         return 'b'
-    elif their_history [350] == 'cb':
+    elif their_history == 'cb':
         return 'c'
     elif my_score > 450:
         return 'c'
     elif my_score > 600:
         return 'b'
-    elif their_history [700] == 'bbb':
+    elif their_history == 'bbb':
         return 'b'
     elif my_score > 900:
         return 'b'
@@ -45,7 +45,7 @@ def move(my_history, their_history, my_score, their_score):
         return 'c'
     elif my_score < 1000:
         return 'b'
-    elif their_history [1200] == 'ccb':
+    elif their_history == 'ccb':
         return 'b'
     elif my_score > 1300:
         return 'c' 
